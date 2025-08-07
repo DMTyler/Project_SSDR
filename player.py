@@ -117,7 +117,7 @@ def compute_skinning(P, W, R, T):
     return V_hat, J
 
 
-def play_skinning(P, W, R, T, faces, fps=24, cam_offset=0.0):
+def play_skinned_animation(P, W, R, T, faces, fps=24, cam_offset=0.0):
     """
     Play skinned mesh + skeleton joint points in Open3D.
 
