@@ -6,6 +6,9 @@ to extract bone transforms and skinning weights from a sequence of meshes.
 这个仓库是对 SSDR（Le & Deng, SIGGRAPH Asia 2012）论文算法的最简 Python/NumPy 实现，
 用于从网格动画序列中提取骨骼变换和蒙皮权重。
 
+![Original Animation](pics/original_anim.gif)
+![SSDR Animation](pics/skinned_anim.gif)
+
 ## Installation
 **This project requires Python 3.10. Other python versions are not tested.**
 
