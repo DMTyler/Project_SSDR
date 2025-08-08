@@ -14,8 +14,8 @@ def read_vertex_animation(npz_path):
     """
     data = np.load(npz_path)
     V = data['V']  # shape: (F, N, 3)
-    P = data['P']  # shape: (N, 3)
-    F = data['F']
+    P = data['P'] if 'P' in data else V[0]  # shape: (N, 3)
+    F = data['F'] if 'F' in data else None
     return V, P, F
 
 
